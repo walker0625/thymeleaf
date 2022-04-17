@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<!--부분 include 방식 > 페이지가 많지 않을 때-->
+<footer th:fragment="copy">
+    푸터 자리 입니다.
+</footer>
+
+<footer th:fragment="copyParam(param1, param2)">
+    <p>파라미터 자리 입니다.</p>
+    <p th:text="${param1}"></p>
+    <p th:text="${param2}"></p>
+</footer>
+
+</body>
+</html>
